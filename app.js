@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express()   //app ma object ayera bascha
-
+const PORT= 3000;
 app.set('view engine',"ejs")
 
 app.get("/",(req,res)=>{
@@ -24,6 +24,6 @@ app.get("/contact",(req,res)=>{
 
 //function pass bhairacha as a argument in a method is callback function
 
-app.listen(3000,() =>{
-    console.log("nodejs project has started at port" + 3000)
+app.listen(PORT,() =>{
+    console.log(`https:localhost:${PORT}`)
 }) 
